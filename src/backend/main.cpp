@@ -3,18 +3,18 @@ using namespace std;
 
 class record
 {
-    /* recordID, Date, Time, Amount, Category, PaymentMethod, Payee, Description, Deleted */
     private:
-        int recordID;
+        int recordID; // Will be auto assigned
         // date
         // time
-        double amount;
+        double amount; // +ve for income and -ve for expenses
         // category
         // payment method
         char payee[20];
         char description[100];
         int deleted;
     public:
-        record(/* args */);
+        record();
         ~record();
 };
+
