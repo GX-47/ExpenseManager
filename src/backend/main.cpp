@@ -15,6 +15,6 @@ class record
         char description[100];
         int deleted;
     public:
-        main(/* args */);
-        ~main();
+        record(/* args */);
+        ~record();
 };
