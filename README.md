@@ -16,12 +16,12 @@ Data is stored in record.csv in format :
 
 Frontend has specified folder. Done using Qt.
 
-Backend has specified folder. Done using C++.
-Backend has class record which has these(recordID, Date, Time, Amount, Category, PaymentMethod, Payee, Description, Deleted) fields.
+Backend has specified folder. Done using C++.\
+Backend has class record which has these(recordID, Date, Time, Amount, Category, PaymentMethod, Payee, Description, Deleted) fields.\
 Backend should perform CRUD(Create, Read, Update, Delete) operations :
-    Create - Create a record object and write it to record.csv
-    Read - Read all records
+   - Create - Create a record object and write it to record.csv
+   - Read - Read all records
          - Read a specified record using recordID
          - Read using specific conditions(like date, category, etc)
-    Update - Update the record.csv
-    Delete - Delete from record.csv
+   - Update - Update the record.csv
+   - Delete - Delete from record.csv
