@@ -21,7 +21,7 @@ Backend has class record which has these(recordID, Date, Time, Amount, Category,
 Backend should perform CRUD(Create, Read, Update, Delete) operations :
    - Create - Create a record object and write it to record.csv
    - Read - Read all records
-         - Read a specified record using recordID
-         - Read using specific conditions(like date, category, etc)
+          - Read a specified record using recordID
+          - Read using specific conditions(like date, category, etc)
    - Update - Update the record.csv
    - Delete - Delete from record.csv
