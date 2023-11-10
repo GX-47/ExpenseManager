@@ -29,6 +29,23 @@ public:
     // View expenses by payment method
     void viewExpensesByPaymentMethod(const std::string& paymentMethod) const;
 
+    // Modify an expense by record ID
+    void modifyExpense(int recordID);
+
+    // Function to calculate total expenses
+    double calculateTotalExpenses() const;
+
+    // Function to display total expenses
+    void displayTotalExpenses() const;
+
+    // Function to display expenses by category
+    void displayExpensesByCategory(const std::string& category) const;
+
+    // Function to display expenses by date
+    void displayExpensesByDate(const std::string& date) const;
+
+    // Function to display expenses by payment method
+    void displayExpensesByPaymentMethod(const std::string& paymentMethod) const;
 
 private:
     std::vector<Expense> expenses;
@@ -38,6 +55,10 @@ private:
 
     // Create a new expense
     void createExpense(const Expense& expense);
+
+    // Add this to ExpenseManager.h
+    int generateUniqueRecordID() const;
+
 };
 
 #endif
