@@ -6,13 +6,10 @@ Repository for Expense Manager project for special topic (C++) project
 Data is stored in record.csv in the format:
    - recordID (unique)
    - Date
-   - Time
-   - Amount (+ve for income, -ve for expense)
+   - Amount
    - Category (for food, travel, entertainment, etc)
    - PaymentMethod (cash, credit card, gpay, etc)
-   - Payee (string, optional)
    - Description (string, optional)
-   - Deleted (will explain) (make it true if record is deleted)
 
 Frontend has a specified folder. Done using Qt.
 
