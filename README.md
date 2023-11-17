@@ -11,9 +11,9 @@ Data is stored in record.csv in the format:
    - PaymentMethod (cash, credit card, gpay, etc)
    - Description (string, optional)
 
-Frontend has a specified folder. Done using Qt.
+Frontend(GUI) has a specified folder. Done using Qt.
 
-Backend has specified folder. Done using C++. Backend has class record which has these(recordID, Date, Time, Amount, Category, PaymentMethod, Payee, Description, Deleted) fields.
+Backend(CUI) has specified folder. Done using C++. Backend has class record which has these(recordID, Date, Time, Amount, Category, PaymentMethod, Payee, Description, Deleted) fields.
 
 Backend should perform CRUD (Create, Read, Update, Delete) operations:
    - Create
