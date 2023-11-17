@@ -56,7 +56,7 @@ void Expense::setDescription(const std::string& description) {
 }
 
 // Print the expense details
-void Expense::printExpense() const {
+void Expense::printExpense() {
     std::cout << "Record ID: " << recordID << "\n"
               << "Date: " << date << "\n"
               << "Amount: " << amount << "\n"

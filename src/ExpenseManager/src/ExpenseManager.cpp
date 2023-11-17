@@ -3,6 +3,7 @@
 #include <fstream>
 #include <sstream>
 #include <limits>
+#include <iomanip>
 
 // Load expenses from a CSV file
 void ExpenseManager::loadExpenses(const std::string& filename) {
@@ -123,13 +124,26 @@ void ExpenseManager::createExpenseFromUserInput() {
 
     std::string date, category, paymentMethod, description;
     double amount;
+    int flag = 1;
 
     // Get input from the user
     std::cout << "Enter Date (YYYY-MM-DD): ";
     std::cin >> date;
 
-    std::cout << "Enter Amount: ";
-    std::cin >> amount;
+    // Validate and get the amount
+    bool validAmount = false;
+    do {
+        std::cout << "Enter Amount: ";
+        std::cin >> amount;
+
+        if (std::cin.fail() || amount <= 0) {
+            std::cout << "Invalid amount. Please enter a valid positive number." << std::endl;
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        } else {
+            validAmount = true;
+        }
+    } while (!validAmount);
 
     std::cin.ignore(); // Clear newline character from the buffer
 

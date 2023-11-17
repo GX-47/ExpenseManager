@@ -25,7 +25,7 @@ public:
     void setDescription(const std::string& description);
 
     // Print the expense details
-    void printExpense() const;
+    void printExpense();
 
 private:
     int recordID;
